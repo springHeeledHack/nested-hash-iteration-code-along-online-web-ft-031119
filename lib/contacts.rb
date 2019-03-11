@@ -17,7 +17,7 @@ require 'pry'
 def remove_strawberry(contacts)
   contacts.each do |person, data|
     data.each do |field, value|
-      if value.kind_of(Array)
+      if value.kind_of?(Array)
         value.delete_if {|x| x == "strawberry"}
       end
     end
